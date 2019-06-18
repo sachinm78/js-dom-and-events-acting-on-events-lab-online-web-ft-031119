@@ -12,3 +12,7 @@ function retrieveEmployeeInformation(){
   return input.value
 }
 
+function addNewElementAsLi(){
+  let eName = retrieveEmployeeInformation()
+  document.querySelector('.employee-list').insertAdjacentHTML('beforeend', `<li>${eName}</li>`)
+}
